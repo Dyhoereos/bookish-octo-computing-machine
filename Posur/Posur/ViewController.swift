@@ -47,34 +47,29 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @objc private func changeImage(){
+    @objc private func changeImage() {
         let imgFiles = getListOfFileNames()
         let randomIndex = Int(arc4random_uniform(UInt32(imgFiles.count)))
         let imgFile = NSURL.fileURL(withPath: imgFiles[randomIndex]).deletingPathExtension()
         
-        if (isLandscape()) {
-            if let imgPath = Bundle.main.path(forResource: imgFile.path, ofType: "png", inDirectory: "h_images") {
-                imgView.image = UIImage(contentsOfFile: imgPath)
-            }
-        } else {
-            if let imgPath = Bundle.main.path(forResource: imgFile.path, ofType: "png", inDirectory: "p_images") {
-                imgView.image = UIImage(contentsOfFile: imgPath)
-            }
-        }
+        let imgPath = isLandscape() ?
+            Bundle.main.path(forResource: imgFile.path, ofType: "png", inDirectory: "h_images") :
+            Bundle.main.path(forResource: imgFile.path, ofType: "png", inDirectory: "p_images")
+        
+        imgView.image = UIImage(contentsOfFile: imgPath!)
+
     }
     
     private func getListOfFileNames() -> Array<String> {
         
         let docsPath = isLandscape() ?
-            Bundle.main.resourcePath! + "/h_images": Bundle.main.resourcePath! + "/p_images"
+            Bundle.main.resourcePath! + "/h_images" :
+            Bundle.main.resourcePath! + "/p_images"
+        
         let fileManager = FileManager.default
         var docsArray: [String] = []
+        docsArray = try! fileManager.contentsOfDirectory(atPath: docsPath)
         
-        do {
-            docsArray = try fileManager.contentsOfDirectory(atPath: docsPath)
-        } catch {
-            print(error)
-        }
         return docsArray
     }
 
