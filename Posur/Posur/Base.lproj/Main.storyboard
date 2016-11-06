@@ -18,23 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ylG-eO-KBB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ylG-eO-KBB">
+                                <gestureRecognizers/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="ylG-eO-KBB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Aw3-qH-Beh"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ylG-eO-KBB" secondAttribute="bottom" id="Axt-Eb-G8I"/>
-                            <constraint firstItem="ylG-eO-KBB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="d7s-38-fy6"/>
-                            <constraint firstAttribute="trailing" secondItem="ylG-eO-KBB" secondAttribute="trailing" id="kgl-fF-Ucu"/>
+                            <constraint firstItem="ylG-eO-KBB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4e8-P4-vNR"/>
+                            <constraint firstItem="ylG-eO-KBB" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="9Lp-TP-4AG"/>
+                            <constraint firstAttribute="trailing" secondItem="ylG-eO-KBB" secondAttribute="trailing" id="aTO-nw-sf1"/>
+                            <constraint firstItem="ylG-eO-KBB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cnK-4c-7gf"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Tu0-9I-yR6" appends="YES" id="hVg-Ai-1Cr"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="imgView" destination="ylG-eO-KBB" id="ZpD-BJ-Ae0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Tu0-9I-yR6">
+                    <connections>
+                        <action selector="tapped:" destination="BYZ-38-t0r" id="snR-4U-5eE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="101.59999999999999" y="119.1904047976012"/>
         </scene>
     </scenes>
 </document>

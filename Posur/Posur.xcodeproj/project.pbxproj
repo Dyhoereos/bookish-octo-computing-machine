@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A075159B1DCEF16C00356289 /* p_images in Resources */ = {isa = PBXBuildFile; fileRef = A075159A1DCEF16C00356289 /* p_images */; };
+		A075159F1DCEF1B000356289 /* h_images in Resources */ = {isa = PBXBuildFile; fileRef = A075159E1DCEF1B000356289 /* h_images */; };
 		A0D2C5A31DCE5CAB00C63C3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D2C5A21DCE5CAB00C63C3E /* AppDelegate.swift */; };
 		A0D2C5A51DCE5CAB00C63C3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D2C5A41DCE5CAB00C63C3E /* ViewController.swift */; };
 		A0D2C5A81DCE5CAB00C63C3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D2C5A61DCE5CAB00C63C3E /* Main.storyboard */; };
 		A0D2C5AA1DCE5CAB00C63C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D2C5A91DCE5CAB00C63C3E /* Assets.xcassets */; };
 		A0D2C5AD1DCE5CAB00C63C3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D2C5AB1DCE5CAB00C63C3E /* LaunchScreen.storyboard */; };
 		A0D2C5B81DCE5CAB00C63C3E /* PosurTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D2C5B71DCE5CAB00C63C3E /* PosurTests.swift */; };
-		A0D2C5C31DCE5E8800C63C3E /* images in Resources */ = {isa = PBXBuildFile; fileRef = A0D2C5C21DCE5E8800C63C3E /* images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A075159A1DCEF16C00356289 /* p_images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = p_images; path = ../../../Downloads/p_images; sourceTree = "<group>"; };
+		A075159E1DCEF1B000356289 /* h_images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = h_images; path = "../../../Downloads/hands (1) 2/h_images"; sourceTree = "<group>"; };
 		A0D2C59F1DCE5CAB00C63C3E /* Posur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Posur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D2C5A21DCE5CAB00C63C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D2C5A41DCE5CAB00C63C3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +40,6 @@
 		A0D2C5B31DCE5CAB00C63C3E /* PosurTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PosurTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D2C5B71DCE5CAB00C63C3E /* PosurTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosurTests.swift; sourceTree = "<group>"; };
 		A0D2C5B91DCE5CAB00C63C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0D2C5C21DCE5E8800C63C3E /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../../Downloads/images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,8 @@
 		A0D2C5A11DCE5CAB00C63C3E /* Posur */ = {
 			isa = PBXGroup;
 			children = (
-				A0D2C5C21DCE5E8800C63C3E /* images */,
+				A075159E1DCEF1B000356289 /* h_images */,
+				A075159A1DCEF16C00356289 /* p_images */,
 				A0D2C5A21DCE5CAB00C63C3E /* AppDelegate.swift */,
 				A0D2C5A41DCE5CAB00C63C3E /* ViewController.swift */,
 				A0D2C5A61DCE5CAB00C63C3E /* Main.storyboard */,
@@ -183,9 +186,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D2C5AD1DCE5CAB00C63C3E /* LaunchScreen.storyboard in Resources */,
+				A075159B1DCEF16C00356289 /* p_images in Resources */,
 				A0D2C5AA1DCE5CAB00C63C3E /* Assets.xcassets in Resources */,
+				A075159F1DCEF1B000356289 /* h_images in Resources */,
 				A0D2C5A81DCE5CAB00C63C3E /* Main.storyboard in Resources */,
-				A0D2C5C31DCE5E8800C63C3E /* images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +414,7 @@
 				A0D2C5BE1DCE5CAB00C63C3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0D2C5BF1DCE5CAB00C63C3E /* Build configuration list for PBXNativeTarget "PosurTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +423,7 @@
 				A0D2C5C11DCE5CAB00C63C3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
