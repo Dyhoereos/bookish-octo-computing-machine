@@ -15,8 +15,31 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.changeImage), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
-        UIScreen.main.brightness = CGFloat(1.0)
         changeImage()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+//        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+//        if launchedBefore  {
+//            print("Not first launch.")
+//        } else {
+        
+        let tutBox = UIAlertController(title: "Welcome to Posur", message: "Use this app when you can't think of a good pose for your hands when you are having your photo taken. ", preferredStyle: .alert)
+        
+        let next = UIAlertAction(title: "Instructions", style: .default, handler: {(UIAlertAction) in
+
+            let instructions = UIAlertController(title: "Instructions", message: "Keep your phone in portrait mode for single hand poses, flip your phone to landscape for double hand poses! \n\nIf you don't like what you see, tap the screen to get another pose.", preferredStyle: .alert)
+
+            let getStarted = UIKit.UIAlertAction(title: "Let's get started", style: .default, handler: nil)
+
+            instructions.addAction(getStarted)
+            self.present(instructions, animated: true, completion: nil)
+        } )
+        
+        tutBox.addAction(next)
+        present(tutBox, animated: true, completion: nil)
+        
+//            UserDefaults.standard.set(true, forKey: "launchedBefore")
     }
 
     override func didReceiveMemoryWarning() {
