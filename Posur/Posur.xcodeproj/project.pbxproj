@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A075159B1DCEF16C00356289 /* p_images in Resources */ = {isa = PBXBuildFile; fileRef = A075159A1DCEF16C00356289 /* p_images */; };
 		A075159F1DCEF1B000356289 /* h_images in Resources */ = {isa = PBXBuildFile; fileRef = A075159E1DCEF1B000356289 /* h_images */; };
+		A09606161DD03A6A00744E0E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09606151DD03A6A00744E0E /* SettingsViewController.swift */; };
 		A0D2C5A31DCE5CAB00C63C3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D2C5A21DCE5CAB00C63C3E /* AppDelegate.swift */; };
 		A0D2C5A51DCE5CAB00C63C3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D2C5A41DCE5CAB00C63C3E /* ViewController.swift */; };
 		A0D2C5A81DCE5CAB00C63C3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D2C5A61DCE5CAB00C63C3E /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		A075159A1DCEF16C00356289 /* p_images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = p_images; path = ../../../Downloads/p_images; sourceTree = "<group>"; };
 		A075159E1DCEF1B000356289 /* h_images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = h_images; path = "../../../Downloads/hands (1) 2/h_images"; sourceTree = "<group>"; };
+		A09606151DD03A6A00744E0E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A0D2C59F1DCE5CAB00C63C3E /* Posur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Posur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D2C5A21DCE5CAB00C63C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D2C5A41DCE5CAB00C63C3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				A0D2C5A91DCE5CAB00C63C3E /* Assets.xcassets */,
 				A0D2C5AB1DCE5CAB00C63C3E /* LaunchScreen.storyboard */,
 				A0D2C5AE1DCE5CAB00C63C3E /* Info.plist */,
+				A09606151DD03A6A00744E0E /* SettingsViewController.swift */,
 			);
 			path = Posur;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			files = (
 				A0D2C5A51DCE5CAB00C63C3E /* ViewController.swift in Sources */,
 				A0D2C5A31DCE5CAB00C63C3E /* AppDelegate.swift in Sources */,
+				A09606161DD03A6A00744E0E /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
