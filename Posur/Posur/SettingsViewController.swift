@@ -20,7 +20,7 @@ class SettingsViewController: UIViewController {
         let hideWelcome = UserDefaults.standard.bool(forKey: "hideWelcome")
         let hideNSFW = UserDefaults.standard.bool(forKey: "hideNSFW")
         sw_welcome.isOn = hideWelcome
-        sw_nsfw.isOn = !hideNSFW
+        sw_nsfw.isOn = hideNSFW
         
     }
 

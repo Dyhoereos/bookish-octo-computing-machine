@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             
             let next = UIAlertAction(title: "Instructions", style: .default, handler: {(UIAlertAction) in
 
-                let instructions = UIAlertController(title: "Instructions", message: "Keep your phone in portrait mode for single hand poses, flip your phone to landscape for double hand poses! \n\nIf you don't like what you see, tap the screen to get another pose.", preferredStyle: .alert)
+                let instructions = UIAlertController(title: "Instructions", message: "Keep your phone in portrait mode for single hand poses, flip your phone to landscape for double hand poses! \n\nIf you don't like what you see, tap the screen to get another pose. \n\n Swipe left to access the option menu.", preferredStyle: .alert)
                 let getStarted = UIKit.UIAlertAction(title: "Let's get started", style: .default, handler: nil)
                 instructions.addAction(getStarted)
                 UserDefaults.standard.set(true, forKey: "hideWelcome")
@@ -50,6 +50,12 @@ class ViewController: UIViewController {
         let imgFiles = getListOfFileNames()
         let randomIndex = Int(arc4random_uniform(UInt32(imgFiles.count)))
         let imgFileName = NSURL.fileURL(withPath: imgFiles[randomIndex]).deletingPathExtension()
+
+        if (UserDefaults.standard.bool(forKey: "hideNSFW") && imgFileName.path[imgFileName.path.index(imgFileName.path.startIndex, offsetBy: 1)] == "n"){
+            changeImage()
+            return
+        }
+        
         let dir = isLandscape() ? "h_images" : "p_images"
         let imgPath = Bundle.main.path(forResource: imgFileName.path, ofType: "png", inDirectory: dir)
             
