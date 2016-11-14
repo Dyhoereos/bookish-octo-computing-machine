@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         let randomIndex = Int(arc4random_uniform(UInt32(imgFiles.count)))
         let imgFileName = NSURL.fileURL(withPath: imgFiles[randomIndex]).deletingPathExtension()
 
-        if (UserDefaults.standard.bool(forKey: "hideNSFW") && imgFileName.path[imgFileName.path.index(imgFileName.path.startIndex, offsetBy: 1)] == "n"){
+        if (!UserDefaults.standard.bool(forKey: "showNSFW") && imgFileName.path[imgFileName.path.index(imgFileName.path.startIndex, offsetBy: 1)] == "n"){
             changeImage()
             return
         }

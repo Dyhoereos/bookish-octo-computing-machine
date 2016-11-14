@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="main" translatesAutoresizingMaskIntoConstraints="NO" id="ylG-eO-KBB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="main" translatesAutoresizingMaskIntoConstraints="NO" id="ylG-eO-KBB">
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Aiz-Yw-n1q" appends="YES" id="66H-oo-2Hf"/>
@@ -30,9 +30,12 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ylG-eO-KBB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4e8-P4-vNR"/>
+                            <constraint firstAttribute="trailing" secondItem="ylG-eO-KBB" secondAttribute="trailing" id="7hx-gR-C8n"/>
                             <constraint firstItem="ylG-eO-KBB" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="9Lp-TP-4AG"/>
+                            <constraint firstItem="ylG-eO-KBB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WT9-LR-SVj"/>
                             <constraint firstAttribute="trailing" secondItem="ylG-eO-KBB" secondAttribute="trailing" id="aTO-nw-sf1"/>
                             <constraint firstItem="ylG-eO-KBB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cnK-4c-7gf"/>
+                            <constraint firstItem="ylG-eO-KBB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="huQ-Sm-9V3"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Tu0-9I-yR6" appends="YES" id="hVg-Ai-1Cr"/>
@@ -100,7 +103,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hide NSFW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stX-o0-aSG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show NSFW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stX-o0-aSG">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

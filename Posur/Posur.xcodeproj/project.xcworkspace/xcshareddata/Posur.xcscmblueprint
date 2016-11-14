@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CCBC8465EC36763934A4DCD910D5BBEB0FD92CB5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CCBC8465EC36763934A4DCD910D5BBEB0FD92CB5" : 9223372036854775807,
+    "A588E58E011C0C4C73CD8FF72A8C7BA340E0BA15" : 9223372036854775807,
+    "3F3F8C73536737AE37870F23ED76D71057F1422D" : 9223372036854775807,
+    "57174BBC86F8FB2E56DA657542C721CA09349102" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "78B969BB-7EF5-46FF-8A5C-CC3CCD94BB05",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CCBC8465EC36763934A4DCD910D5BBEB0FD92CB5" : "bookish-octo-computing-machine\/",
+    "A588E58E011C0C4C73CD8FF72A8C7BA340E0BA15" : "Desktop\/actionsheets-alertviews\/",
+    "3F3F8C73536737AE37870F23ED76D71057F1422D" : "Desktop\/ios-project\/",
+    "57174BBC86F8FB2E56DA657542C721CA09349102" : "Desktop\/iOS%20tutorials\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Posur",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Posur\/Posur.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Dyhoereos\/ios-project.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3F3F8C73536737AE37870F23ED76D71057F1422D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Dyhoereos\/iOS-Tutorials.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "57174BBC86F8FB2E56DA657542C721CA09349102"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Dyhoereos\/actionsheets-alertviews.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A588E58E011C0C4C73CD8FF72A8C7BA340E0BA15"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Dyhoereos\/bookish-octo-computing-machine.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CCBC8465EC36763934A4DCD910D5BBEB0FD92CB5"
+    }
+  ]
+}

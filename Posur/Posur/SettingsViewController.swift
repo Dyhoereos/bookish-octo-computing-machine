@@ -18,9 +18,9 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         
         let hideWelcome = UserDefaults.standard.bool(forKey: "hideWelcome")
-        let hideNSFW = UserDefaults.standard.bool(forKey: "hideNSFW")
+        let showNSFW = UserDefaults.standard.bool(forKey: "showNSFW")
         sw_welcome.isOn = hideWelcome
-        sw_nsfw.isOn = hideNSFW
+        sw_nsfw.isOn = showNSFW
         
     }
 
@@ -41,8 +41,8 @@ class SettingsViewController: UIViewController {
         print(UserDefaults.standard.bool(forKey: "hideWelcome"))
     }
     @IBAction func nsfwToggled(_ sender: UISwitch) {
-        UserDefaults.standard.set(sw_nsfw.isOn, forKey: "hideNSFW")
-        print(UserDefaults.standard.bool(forKey: "hideNSFW"))
+        UserDefaults.standard.set(sw_nsfw.isOn, forKey: "showNSFW")
+        print(UserDefaults.standard.bool(forKey: "showNSFW"))
     }
 
 }
